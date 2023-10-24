@@ -1,0 +1,310 @@
+pii:
+    adele:
+        airhelp_numbers:
+            - phone_number
+        voice_calls:
+            - caller_identity
+    ahplus-rails:
+        truevo_payments:
+            - card_4_digits
+        air_bundle_addresses:
+            - street_address1
+            - street_address2
+            - zip_code
+        insurance_checkouts:
+            - main_passenger
+            - additional_passengers
+        lounge_passes:
+            - passenger_name
+    airbase:
+        claim_status_update_procedures:
+            - comment
+        contact_people:
+            - name
+            - surname
+            - email
+            - phone
+            - address
+        payment_accounts:
+            - iban
+        payout_procedures:
+            - email
+            - phone
+            - transfer_format
+        users:
+            - first_name
+            - last_name
+            - email
+    aircom:
+        email_deliveries:
+            - recipient_email
+        incoming_messages:
+            - from
+        incoming_message_attachments:
+            - file_name
+        incoming_message_contents:
+            - subject
+            - body_part
+        message_attachments:
+            - file_name
+        sent_messages:
+            - recipient
+            - subject
+        sms_deliveries:
+            - recipient_number
+            - body
+        whatsapp_deliveries:
+            - to
+            - body
+        whatsapp_recipient_numbers:
+            - recipient
+    airmail:
+        mandrill_events:
+            - source_webhook
+    auth:
+        user:
+            - email
+    cockpit:
+        active_admin_comments:
+            - body
+        addresses:
+            - address_1
+            - address_2
+            - zip
+        attachments:
+            - document_file_name
+        claim_adjustments:
+            - comment
+        claimants:
+            - email
+            - first_name
+            - last_name
+            - phone_number
+        compensation_collection_by_customer_details:
+            - comment
+        compensation_collection_details:
+            - comment
+        customer_reimbursements:
+            - comment
+        document_contents:
+            - value
+            - extracted_data
+        fee_collections_from_customers:
+            - comment
+        fellow_passengers:
+            - email
+            - first_name
+            - last_name
+        internal_documents:
+            - document_file_name
+        legal_action_details:
+            - comment
+        optional_questions:
+            - what_happened
+        requested_document_answers:
+            - content
+        service_fee_collections:
+            - comment
+        special_cares:
+            - comment
+        travel_documents:
+            - document_file_name
+        users:
+            - email
+    documents:
+        legal_documents:
+            - data
+    extlawyers:
+        active_storage_blobs:
+            - filename
+        contract_entries:
+            - comment
+        corrections:
+            - comment
+        transactions:
+            - comment
+        transactions_upload_csv_files:
+            - filename
+    google_drive:
+        collinson_monthly_cumulative_data:
+            - customer_name
+    halina:
+        event_log:
+            - author_name
+    inbox:
+        unmatched_emails:
+            - from_email
+            - from_name
+            - subject
+    invoices:
+        ahplus_invoices:
+            - home_address
+            - ip_address
+            - phone_address
+            - body
+        invoices:
+            - body
+        credit_memos:
+            - body
+    leadgun:
+        users:
+            - email
+    legalclaimcases:
+        claim_details:
+            - client_name
+        legal_messages:
+            - content
+            - internal_documents
+        legal_notes:
+            - body
+        properties:
+            - comment
+    payouts:
+        accounts:
+            - email
+            - first_name
+            - last_name
+            - phone_number
+            - address_1
+            - address_2
+            - zip
+        agents:
+            - email
+            - name
+        bank_transfer_details:
+            - first_name
+            - last_name
+            - address_1
+            - address_2
+            - iban
+            - routing_number
+            - comment
+            - zip
+        bank_transfer_completed_events:
+            - payload
+        cheque_details:
+            - address_1
+            - address_2
+            - zip
+            - full_name
+        credit_card_transfer_details:
+            - last_4_digits
+            - card_holder
+            - expiry_year
+            - expiry_month
+        free_bank_transfer_details:
+            - first_name
+            - last_name
+            - iban
+            - address_1
+            - zip
+            - account_number
+        payout_user_revision_events:
+            - payload
+        payout_comments:
+            - body
+        paypal_details:
+            - email
+        users:
+            - email
+            - name
+        versions:
+            - object
+    vip:
+        active_admin_comments:
+            - body
+        admin_users:
+            - email
+            - current_sign_in_ip
+            - last_sign_in_ip
+        partners:
+            - request_update_leads_auth_token
+            - am_api_username
+            - am_api_password
+        users:
+            - email
+            - first_name
+            - last_name
+            - current_sign_in_ip
+            - last_sign_in_ip
+    webapp:
+        addresses:
+            - address_1
+            - address_2
+            - zip
+        bank_transfer_details:
+            - first_name
+            - last_name
+            - address_1
+            - address_2
+            - zip
+            - swift
+            - iban
+            - routing_number
+            - comment
+        cheque_details:
+            - address_1
+            - address_2
+            - zip
+            - full_name
+        claim_enquiries:
+            - first_name
+            - last_name
+        cockpit_fellow_passenger_addresses:
+            - address_1
+            - address_2
+            - zip
+        credit_card_transfer_details:
+            - card_holder
+            - last_4_digits
+        fellow_passengers:
+            - email
+            - first_name
+            - last_name
+        free_bank_transfer_details:
+            - first_name
+            - last_name
+            - swift
+            - iban
+            - address_1
+            - routing_number
+            - phone_number
+            - tax_identifier
+            - account_number
+            - sort_code
+            - zip
+        luggages:
+            - pir_reference_number
+        optional_questions:
+            - what_happened
+        paypal_details:
+            - email
+        personal_details:
+            - fiscal_number
+            - passport_number
+            - id_number
+        phone_numbers:
+            - number
+        users:
+            - email
+            - first_name
+            - last_name
+json_subfields_white_list:
+    invoices:
+        invoices:
+            - body.sales_date
+            - body.document_date
+            - body.total_amount
+            - body.invoice_items
+            - body.address.country_code
+            - body.seller
+        credit_memos:
+            - body.address.country_code
+            - body.seller
+            - body.sales_date
+            - body.document_date
+            - body.invoice_number
+            - body.correction_reason
+            - body.total_correction_amount
+            - body.items_before_correction
+            - body.items_after_correction

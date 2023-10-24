@@ -1,0 +1,18 @@
+snapshots:
+    bucket_name:
+        staging: ah-sta-datalake-sta
+        production: airhelp-datalake-production
+    snowflake_stage_name:
+        staging: s3_sta_stage
+        production: s3_production_stage
+    assumed_role:
+        staging: arn:aws:iam::064764542321:role/jenkins-xrole-for-dt-sta
+        production: arn:aws:iam::555911484621:role/jenkins-xrole-for-dt-production
+    snowflake_warehouse_name:
+        staging: snapshot_loading_dev
+        production: snapshot_loading
+    prefix: ""
+    template: plugins/airhelp/tasks/snapshot_loader/templates/snapshot_stored_procedure_call.sql
+    metadata:
+        prefix: metadata/snapshots/
+        loader: metadata/config/snapshots.yaml

@@ -1,0 +1,15 @@
+bidb:
+    public:
+        - mv_wr_300
+        - reprocessing_campaigns_covid_claims
+        - reprocessing_campaigns_covid
+        - sourcemedium_team_channel_mapping
+        - ga_source_campaign_claim_id
+        - zendesk_emails
+        - zendesk_channel_merge
+        - oag_arl_names
+        - oag_aggregated_airlines
+        - win_rate_ml_dashboard_input_4_0
+        - unmatched_extra_money
+    test_schema:
+        - test_table

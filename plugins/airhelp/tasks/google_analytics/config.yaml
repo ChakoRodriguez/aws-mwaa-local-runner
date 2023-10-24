@@ -1,0 +1,16 @@
+ga360:
+    project_id: airhelp-bq-ga
+    dataset_id: 80227642
+    table_prefix: ga_sessions
+    template: plugins/airhelp/tasks/google_analytics/templates/ga360_export.sql
+    gcs_uri: gs://airhelp-bq-exports/ga_export/
+    gcp_conn_id: gcp_airhelp_bq_ga
+    service_account_ssm_key: AIRHELP-BQ-GA-SERVICE-ACCOUNT
+ga4:
+    project_id: airhelp-bq-ga4
+    dataset_id: analytics_287073636
+    table_prefix: events
+    template: plugins/airhelp/tasks/google_analytics/templates/ga4_export.sql
+    gcs_uri: gs://airhelp-bq-ga4-exports/ga_export/
+    gcp_conn_id: gcp_airhelp_bq4_ga
+    service_account_ssm_key: AIRHELP-BQ-GA4-SERVICE-ACCOUNT

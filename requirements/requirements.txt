@@ -1,0 +1,14 @@
+--constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.4.3/constraints-3.10.txt"
+apache-airflow[ssh]==2.4.3
+apache-airflow-providers-pagerduty==3.0.0
+apache-airflow-providers-dbt-cloud==2.2.0
+apache-airflow-providers-snowflake==3.3.0
+apache-airflow-providers-google==8.4.0
+apache-airflow-providers-slack==6.0.0
+astronomer-providers[snowflake]==1.15.0
+pyarrow==6.0.1
+s3fs==0.4.2
+virtualenv==20.16.6
+boto3==1.26.7
+asgiref==3.5.2
+arrow==1.2.3

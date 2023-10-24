@@ -1,0 +1,15 @@
+snapshots:
+    bucket_name:
+        staging: ah-dts-datalake-dt-staging
+        production: ah-dtp-datalake-dt-production
+    snowflake_stage_name:
+        staging: ah_raw_dev_dt_staging
+        production: ah_raw_dt_production
+    snowflake_warehouse_name:
+        staging: snapshot_loading_dev
+        production: snapshot_loading
+    prefix: snapshots/
+    template: plugins/airhelp/tasks/snapshot_loader/templates/snapshot_stored_procedure_call.sql
+    metadata:
+        prefix: metadata/snapshots/
+        loader: metadata/config/snapshots.yaml
